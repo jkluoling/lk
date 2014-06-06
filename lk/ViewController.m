@@ -26,4 +26,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)show:(id)sender {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.5];
+    datepick.frame = CGRectMake(0, 150, 320, 216);
+    [UIView commitAnimations];
+}
+
+- (IBAction)close:(id)sender {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.5];
+    datepick.frame = CGRectMake(0, 650, 320, 216);
+    [UIView commitAnimations];
+
+}
 @end

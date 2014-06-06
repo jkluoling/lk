@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UIDatePicker *datepick;
+}
+- (IBAction)show:(id)sender;
+- (IBAction)close:(id)sender;
 
 @end
